@@ -11,6 +11,6 @@ fun transferInterest(amount: BigDecimal): BigDecimal {
 fun main() {
     val transferAmount = 107.50
     val interest = transferInterest(transferAmount.toBigDecimal())
-    println("Сумма перевода - $transferAmount рублей. " +
-            String.format("Сумма комиссии - %.2f рублей.", interest))
+    val interestOutput = String.format("Сумма комиссии - %.2f рублей.", interest)
+    println("Сумма перевода - $transferAmount рублей.  $interestOutput")
 }
